@@ -1,0 +1,219 @@
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    #gallery-wrapper {
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    img.thumb {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .white-panel {
+      position: absolute;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+    }
+
+    .white-panel h1 {
+      font-size: 1em;
+    }
+
+    .white-panel h1 a {
+      color: #A92733;
+    }
+
+    .white-panel:hover {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+      margin-top: -5px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+
+<body style="background-color: #e6f2ff;">
+  <section class="et-hero-tabs">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/x1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/x5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/x6.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/x7.jpg" alt=""></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-product">主要作品</a>
+      <a class="et-hero-tab" href="#tab-introduce">介绍</a>
+      <a class="et-hero-tab" href="#tab-author">制作人</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  </section>
+
+  <!-- 响应式导航栏 -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-product">
+      <div class="row justify-content-center mb-3 mt-3">
+        <div class="text-center col-6">
+          <h1 style="width: 200px;margin-left: -60px;font-size: 20px;">薛之谦</h1>
+        </div>
+      </div>
+      <section id="gallery-wrapper">
+        <article class="white-panel">
+          <img src="./images/x1.jpg" class="thumb">
+          <h1><a href="#">Title 1</a></h1>
+          <p>Description 1</p>
+        </article>
+
+        <article class="white-panel">
+          <img src="./images/x2.jpg" class="thumb">
+          <h1><a href="#">Title 1</a></h1>
+          <p>Description 1</p>
+        </article>
+
+        <article class="white-panel">
+          <img src="./images/x3.jpg" class="thumb">
+          <h1><a href="#">Title 1</a></h1>
+          <p>Description 1</p>
+        </article>
+
+        <article class="white-panel">
+          <img src="./images/x4.jpg" class="thumb">
+          <h1><a href="#">Title 1</a></h1>
+          <p>Description 1</p>
+        </article>
+
+        <article class="white-panel">
+          <img src="./images/x5.jpg" class="thumb">
+          <h1><a href="#">Title 1</a></h1>
+          <p>Description 1</p>
+        </article>
+
+        <article class="white-panel">
+          <img src="./images/x6.jpg" class="thumb">
+          <h1><a href="#">Title 1</a></h1>
+          <p>Description 1</p>
+        </article>
+
+        <article class="white-panel">
+          <img src="./images/x7.jpg" class="thumb">
+          <h1><a href="#">Title 1</a></h1>
+          <p>Description 1</p>
+        </article>
+
+        <article class="white-panel">
+          <img src="./images/x8.jpg" class="thumb">
+          <h1><a href="#">Title 1</a></h1>
+          <p>Description 1</p>
+        </article>
+      </section>
+    </section>
+    <section class="et-slide" id="tab-introduce">
+      <div class="row justify-content-center mb-3 mt-3">
+        <div class="text-center col-6">
+          <h2 style="width: 200px;margin-left: -60px;margin-top: -140px;">介绍</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <p style="text-indent: 2em;font-size: 28px;margin-top: -100px;">薛之谦（Joker
+            Xue），1983年7月17日出生于上海，中国内地流行乐男歌手、影视演员、音乐制作人，毕业于格里昂酒店管理学院。
+            2005年，因参加选秀节目《我型我秀》而正式出道。2006年，发行首张同名专辑《薛之谦》，随后凭借歌曲《认真的雪》获得广泛关注。2007年，凭借专辑《你过得好吗》获得MusicRadio中国TOP排行榜内地年度最受欢迎男歌手奖。2008年，发行专辑《深深爱过你》，同年在上海举行个人首场演唱会“谦年传说”。2013年，专辑《几个薛之谦》获得MusicRadio中国TOP排行榜内地推荐唱片。2014年，凭借专辑《意外》获得第21届东方风云榜颁奖最佳唱作人；同年他还获得音悦V榜年度盛典年度创作歌手奖。
+            2015年6月，薛之谦首度担当制作人并发行原创EP《绅士》；同年，他还主演都市励志剧《妈妈像花儿一样》。2016年，凭借EP《绅士》、《一半》获得第16届全球华语歌曲排行榜最受欢迎男歌手、五大最受欢迎男歌手奖、上海地区杰出歌手奖及最受欢迎创作歌手奖，而歌曲《初学者》则获得年度二十大金曲奖。2017年4月，开启“我好像在哪见过你”全国巡回演唱会；同年，薛之谦获得第7届全球流行音乐年度盛典年度最佳男歌手及MusicRadio榜中国TOP排行榜内地最佳男歌手。
+            2018年7月，薛之谦“摩天大楼”世界巡回演唱会于北京站启程，整个巡演横跨4大洲，8个国家，21个城市，累计上演场次23场。2020年12月31日，发行第11张个人专辑《天外来物》。</p>
+        </div>
+      </div>
+    </section>
+    <section class="et-slide" id="tab-author">
+      <img src="./images/微信图片_20240216190533.jpg" alt="">
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/pinterest_grid.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script type="text/javascript">
+    $(function () {
+      $("#gallery-wrapper").pinterest_grid({
+        no_columns: 4,
+        padding_x: 3,
+        padding_y: 10,
+        margin_bottom: 50,
+        single_column_breakpoint: 700
+      });
+
+    });
+  </script>
+</body>
